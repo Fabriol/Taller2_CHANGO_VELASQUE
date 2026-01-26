@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nosotros | Peak Performance</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/src/css/style.css">
+</head>
+
+<body class="bg-[#b7b0b0]">
+
+    <header id="navbar" class="fixed top-0 left-0 right-0 z-50 transition-custom">
+        <nav class="container mx-auto px-6 py-6 flex justify-between items-center">
+            <div class="flex items-center space-x-6">
+                <a href="/src/pages/nosotros.html"
+                    class="text-2xl font-black text-white italic uppercase tracking-tighter">
+                    PEAK <span class="text-orange-500">PERFORMANCE</span>
+                </a>
+                <button onclick="abrirCarrito()"
+                    class="flex items-center gap-2 text-red-600 font-bold py-2 px-5 rounded-full transition-custom shadow-lg">
+                    <i class="bi bi-cart-fill"></i>
+                    <span class="text-[15px] uppercase">Comprar</span>
+                </button>
+            </div>
+            <ul class="hidden md:flex space-x-8 text-[11px] font-bold tracking-widest text-white uppercase">
+                <li><a href="/index.html" class="hover:text-orange-500 transition-custom">Inicio</a></li>
+                <li><a href="/src/pages/nosotros.html" class="hover:text-orange-500 transition-custom">Nosotros</a></li>
+                <li><a href="/src/pages/productos.html" class="hover:text-orange-500 transition-custom">Productos</a>
+                </li>
+                <li><a href="/src/pages/contacto.html" class="hover:text-orange-500 transition-custom">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="pt-40 pb-20 container mx-auto px-6">
+        <div class="grid md:grid-cols-2 gap-16 items-center mb-24">
+            <div class="relative group">
+                <div
+                    class="absolute -inset-2 bg-orange-500/20 rounded-3xl blur opacity-0 group-hover:opacity-100 transition-custom">
+                </div>
+                <img src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?q=80&w=2070"
+                    class="relative rounded-3xl grayscale hover:grayscale-0 transition-all duration-700 shadow-2xl border border-gray-800">
+            </div>
+            <div>
+                <h2 class="text-5xl font-black text-white mb-8 uppercase italic leading-none">Nuestra <span
+                        class="text-orange-500">Historia</span></h2>
+                <p class="text-black text-lg leading-relaxed mb-10 font-light italic">Fundada en 2020, Peak
+                    Performance nació con el propósito de traer a Quito el equipamiento deportivo más avanzado del
+                    mundo. No vendemos productos, vendemos resultados.</p>
+
+                <div class="grid grid-cols-2 gap-6 mb-10">
+                    <div class="bg-[#1a1a1a] p-8 rounded-3xl border-l-4 border-orange-500">
+                        <span class="text-white font-black uppercase text-sm block mb-2">Misión</span>
+                        <p class="text-gray-500 text-xs italic">Transformar el potencial humano con tecnología de élite.
+                        </p>
+                    </div>
+                    <div class="bg-[#1a1a1a] p-8 rounded-3xl border-l-4 border-orange-500">
+                        <span class="text-white font-black uppercase text-sm block mb-2">Visión</span>
+                        <p class="text-gray-500 text-xs italic">Ser el referente máximo del deporte en Latinoamérica.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-3 gap-4 border-t border-gray-900 pt-8">
+                    <div>
+                        <span class="text-2xl font-black text-white italic">+5K</span>
+                        <p class="text-[10px] text-black uppercase tracking-widest">Atletas</p>
+                    </div>
+                    <div>
+                        <span class="text-2xl font-black text-white italic">100%</span>
+                        <p class="text-[10px] text-black uppercase tracking-widest">Calidad</p>
+                    </div>
+                    <div>
+                        <span class="text-2xl font-black text-white italic">24/7</span>
+                        <p class="text-[10px] text-black uppercase tracking-widest">Soporte</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-8 mb-24">
+            <div
+                class="bg-[#1a1a1a] p-8 rounded-[2rem] border border-gray-800 hover:border-orange-500/30 transition-custom">
+                <i class="bi bi-shield-check text-orange-500 text-3xl mb-4 block"></i>
+                <h4 class="text-white font-black uppercase italic mb-2">Calidad Pro</h4>
+                <p class="text-gray-500 text-xs leading-relaxed italic">Solo trabajamos con materiales de grado
+                    profesional certificados internacionalmente.</p>
+            </div>
+            <div
+                class="bg-[#1a1a1a] p-8 rounded-[2rem] border border-gray-800 hover:border-orange-500/30 transition-custom">
+                <i class="bi bi-lightning-charge text-orange-500 text-xl mb-4 block"></i>
+                <h4 class="text-white font-black uppercase italic mb-2">Innovación</h4>
+                <p class="text-gray-500 text-xs leading-relaxed italic">Buscamos constantemente las últimas tendencias
+                    en bio-mecánica y rendimiento.</p>
+            </div>
+            <div
+                class="bg-[#1a1a1a] p-8 rounded-[2rem] border border-gray-800 hover:border-orange-500/30 transition-custom">
+                <i class="bi bi-people text-orange-500 text-3xl mb-4 block"></i>
+                <h4 class="text-white font-black uppercase italic mb-2">Comunidad</h4>
+                <p class="text-gray-500 text-xs leading-relaxed italic">Nuestra meta es unir a los atletas de Quito en
+                    una sola fuerza imparable.</p>
+            </div>
+        </div>
+        <section class="container mx-auto px-6 mb-15">
+            <h2 class="text-5xl font-black text-center text-white italic uppercase mb-16 tracking-tighter">
+                Conoce al <span class="text-orange-500">Equipo</span>
+            </h2>
+
+            <div class="justify-center grid sm:grid-cols-2 lg:grid-cols-2 gap-8">
+
+                <div
+                    class="bg-[#1a1a1a] text-center p-10 rounded-[2.5rem] border border-gray-800 hover:border-orange-500/50 transition-custom group shadow-2xl">
+                    <div class="relative w-36 h-36 mx-auto mb-6">
+                        <div
+                            class="absolute inset-0 bg-orange-500 rounded-full blur-lg opacity-20 group-hover:opacity-40 transition-custom">
+                        </div>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPXEX-YmAH2qZSV29Vit1NEgoKHzFL6eDX5PSQMjidwJML7ibA6Q6OdnJ3x7oealYk3ZU&usqp=CAU"
+                            class="relative w-full h-full rounded-full object-cover border-4 border-orange-500 shadow-xl"
+                            alt="Paul Antamba">
+                    </div>
+                    <h3 class="text-2xl font-black text-white italic uppercase">Erick Chango</h3>
+                    <p class="text-orange-500 font-bold uppercase tracking-widest text-[10px] mt-2">Fundador & CEO</p>
+                    <p class="text-gray-500 text-xs mt-4 italic font-light">"Nuestra meta es equipar el éxito de cada
+                        deportista en Ecuador."</p>
+                </div>
+
+                <div
+                    class="bg-[#1a1a1a] text-center p-10 rounded-[2.5rem] border border-gray-800 hover:border-orange-500/50 transition-custom group shadow-2xl">
+                    <div class="relative w-36 h-36 mx-auto mb-6">
+                        <div
+                            class="absolute inset-0 bg-orange-500 rounded-full blur-lg opacity-20 group-hover:opacity-40 transition-custom">
+                        </div>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIKTHaZEcqF_FIBnKlS0Gijog2hZXQwzuDjrVhcsuosEGa_l7Fbyz1epasPuDrimvkHuE&usqp=CAU"
+                            class="relative w-full h-full rounded-full object-cover border-4 border-orange-500 shadow-xl"
+                            alt="Oliver Velasque">
+                    </div>
+                    <h3 class="text-2xl font-black text-white italic uppercase">Oliver Velasque</h3>
+                    <p class="text-orange-500 font-bold uppercase tracking-widest text-[10px] mt-2">Gerente de Ventas
+                    </p>
+                    <p class="text-gray-500 text-xs mt-4 italic font-light">"Asesoría personalizada para llevar tu
+                        potencial al siguiente nivel."</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="bg-[#050505] border-t border-gray-900 py-16">
+        <div class="container mx-auto px-6 text-center">
+            <h3 class="text-2xl font-black italic text-white mb-6 uppercase tracking-tighter">PEAK <span
+                    class="text-orange-500">PERFORMANCE</span></h3>
+            <div class="flex justify-center space-x-8 mb-10">
+                <a href="#" class="text-gray-500 hover:text-orange-500 text-2xl transition-custom"><i
+                        class="bi bi-instagram"></i></a>
+                <a href="#" class="text-gray-500 hover:text-orange-500 text-2xl transition-custom"><i
+                        class="bi bi-facebook"></i></a>
+                <a href="#" class="text-gray-500 hover:text-orange-500 text-2xl transition-custom"><i
+                        class="bi bi-tiktok"></i></a>
+            </div>
+            <p class="text-gray-600 text-[15px] ">© 2026 Peak Performance Quito. Sin Límites.</p>
+        </div>
+    </footer>
+
+    <script type="module" src="/src/js/nosotros.js"></script>
+</body>
+
+</html>

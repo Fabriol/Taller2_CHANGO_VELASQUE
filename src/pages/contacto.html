@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto | Peak Performance</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/src/css/style.css">
+</head>
+
+<body class="bg-[#b7b0b0]">
+
+    <header id="navbar" class="fixed top-0 left-0 right-0 z-50 transition-custom">
+        <nav class="container mx-auto px-6 py-6 flex justify-between items-center">
+            <div class="flex items-center space-x-6">
+                <a href="/src/pages/productos.html"
+                    class="text-2xl font-black text-white italic uppercase tracking-tighter">
+                    PEAK <span class="text-orange-500">PERFORMANCE</span>
+                </a>
+                <button
+                    class="flex items-center gap-2 text-red-600 font-bold py-2 px-5 rounded-full transition-custom shadow-lg cursor-default">
+                    <i class="bi bi-envelope-fill"></i>
+                    <span class="text-[15px] uppercase">Escríbenos</span>
+                </button>
+            </div>
+            <ul class="hidden md:flex space-x-8 text-[11px] font-bold tracking-widest text-white uppercase">
+                <li><a href="/index.html" class="hover:text-orange-500 transition-custom">Inicio</a></li>
+                <li><a href="/src/pages/nosotros.html" class="hover:text-orange-500 transition-custom">Nosotros</a></li>
+                <li><a href="/src/pages/productos.html" class="hover:text-orange-500 transition-custom">Productos</a>
+                </li>
+                <li><a href="/src/pages/contacto.html" class="text-orange-500">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="pt-40 pb-24 container mx-auto px-6">
+
+        <div class="text-center mb-20 reveal">
+            <h2 class="text-5xl font-black text-white italic uppercase tracking-tighter mb-4">Habla con los <span
+                    class="text-orange-500 underline decoration-white/5">Expertos</span></h2>
+            <p class="text-gray-600 text-lg font-light italic max-w-2xl mx-auto">¿Necesitas asesoría sobre qué equipo
+                comprar o tienes un pedido especial para tu gimnasio? Estamos listos.</p>
+        </div>
+
+        <div class="grid lg:grid-cols-2 gap-12 lg:gap-24 items-start">
+
+            <div class="space-y-12 reveal">
+                <div
+                    class="bg-[#1a1a1a] p-8 rounded-[2.5rem] border border-gray-800 hover:border-orange-500/50 transition-custom group">
+                    <i
+                        class="bi bi-geo-alt-fill text-4xl text-orange-500 mb-4 block group-hover:scale-110 transition-transform"></i>
+                    <h3 class="text-xl font-black text-white uppercase italic mb-2">Base de Operaciones</h3>
+                    <p class="text-gray-500 text-sm">Av. Amazonas y Naciones Unidas<br>Quito, Ecuador</p>
+                </div>
+
+                <div
+                    class="bg-[#1a1a1a] p-8 rounded-[2.5rem] border border-gray-800 hover:border-orange-500/50 transition-custom group">
+                    <i
+                        class="bi bi-whatsapp text-4xl text-orange-500 mb-4 block group-hover:scale-110 transition-transform"></i>
+                    <h3 class="text-xl font-black text-white uppercase italic mb-2">Línea Directa</h3>
+                    <p class="text-gray-500 text-sm">+593 99 123 4567<br>soporte@peakperformance.ec</p>
+                </div>
+
+                <div
+                    class="bg-[#1a1a1a] p-8 rounded-[2.5rem] border border-gray-800 hover:border-orange-500/50 transition-custom group">
+                    <i
+                        class="bi bi-clock-fill text-4xl text-orange-500 mb-4 block group-hover:scale-110 transition-transform"></i>
+                    <h3 class="text-xl font-black text-white uppercase italic mb-2">Horario Elite</h3>
+                    <p class="text-gray-500 text-sm">Lun - Vie: 06:00 - 22:00<br>Sáb - Dom: 08:00 - 20:00</p>
+                </div>
+            </div>
+
+            <div
+                class="bg-[#151515] p-10 rounded-[3rem] border border-gray-800 shadow-2xl reveal relative overflow-hidden">
+                <div
+                    class="absolute top-0 right-0 w-64 h-64 bg-orange-500/10 rounded-full blur-[100px] pointer-events-none">
+                </div>
+
+                <form id="contactForm" class="space-y-6 relative z-10">
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div>
+                            <label class="block text-xs font-bold text-gray-500 uppercase tracking-widest mb-2">Tu
+                                Nombre</label>
+                            <input type="text" required
+                                class="w-full bg-[#0a0a0a] text-white border border-gray-800 rounded-xl p-4 focus:border-orange-500 outline-none transition-colors placeholder-gray-700 font-medium"
+                                placeholder="Ej. Juan Pro">
+                        </div>
+                        <div>
+                            <label class="block text-xs font-bold text-gray-500 uppercase tracking-widest mb-2">Tu
+                                Email</label>
+                            <input type="email" required
+                                class="w-full bg-[#0a0a0a] text-white border border-gray-800 rounded-xl p-4 focus:border-orange-500 outline-none transition-colors placeholder-gray-700 font-medium"
+                                placeholder="email@ejemplo.com">
+                        </div>
+                    </div>
+
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div>
+                            <label class="block text-xs font-bold text-gray-500 uppercase tracking-widest mb-2">Teléfono
+                                / WhatsApp</label>
+                            <input type="tel"
+                                class="w-full bg-[#0a0a0a] text-white border border-gray-800 rounded-xl p-4 focus:border-orange-500 outline-none transition-colors placeholder-gray-700 font-medium"
+                                placeholder="+593 99...">
+                        </div>
+                        <div>
+                            <label class="block text-xs font-bold text-gray-500 uppercase tracking-widest mb-2">No. de
+                                Orden (Opcional)</label>
+                            <input type="text"
+                                class="w-full bg-[#0a0a0a] text-white border border-gray-800 rounded-xl p-4 focus:border-orange-500 outline-none transition-colors placeholder-gray-700 font-medium"
+                                placeholder="#12345">
+                        </div>
+                    </div>
+
+                    <div>
+                        <label
+                            class="block text-xs font-bold text-gray-500 uppercase tracking-widest mb-2">Motivo</label>
+                        <select
+                            class="w-full bg-[#0a0a0a] text-gray-400 border border-gray-800 rounded-xl p-4 focus:border-orange-500 outline-none transition-colors font-medium appearance-none">
+                            <option>Asesoría de Equipamiento</option>
+                            <option>Soporte Técnico / Reparación</option>
+                            <option>Ventas Mayoristas (Gimnasios)</option>
+                            <option>Estado de mi Pedido</option>
+                            <option>Otro</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label class="block text-xs font-bold text-gray-500 uppercase tracking-widest mb-2">Modelo de
+                            Equipo / Marca (Opcional)</label>
+                        <input type="text"
+                            class="w-full bg-[#0a0a0a] text-white border border-gray-800 rounded-xl p-4 focus:border-orange-500 outline-none transition-colors placeholder-gray-700 font-medium"
+                            placeholder="Ej. Caminadora ProForm 500, Mancuernas...">
+                    </div>
+
+                    <div>
+                        <label
+                            class="block text-xs font-bold text-gray-500 uppercase tracking-widest mb-2">Mensaje</label>
+                        <textarea rows="4" required
+                            class="w-full bg-[#0a0a0a] text-white border border-gray-800 rounded-xl p-4 focus:border-orange-500 outline-none transition-colors placeholder-gray-700 font-medium resize-none"
+                            placeholder="Describe el problema técnico o lo que necesitas cotizar..."></textarea>
+                    </div>
+
+                    <button type="button"
+                        class="w-full bg-orange-500 text-black font-black py-5 rounded-2xl uppercase italic hover:bg-white transition-custom shadow-lg hover:shadow-orange-500/20 mt-4 flex items-center justify-center gap-2 group">
+                        Enviar Solicitud <i class="bi bi-send-fill group-hover:translate-x-1 transition-transform"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+
+    </main>
+
+    <footer class="bg-[#050505] border-t border-gray-900 py-16">
+        <div class="container mx-auto px-6 text-center">
+            <h3 class="text-2xl font-black italic text-white mb-6 uppercase tracking-tighter">PEAK <span
+                    class="text-orange-500">PERFORMANCE</span></h3>
+            <div class="flex justify-center space-x-8 mb-10">
+                <a href="#" class="text-gray-500 hover:text-orange-500 text-2xl transition-custom"><i
+                        class="bi bi-instagram"></i></a>
+                <a href="#" class="text-gray-500 hover:text-orange-500 text-2xl transition-custom"><i
+                        class="bi bi-facebook"></i></a>
+                <a href="#" class="text-gray-500 hover:text-orange-500 text-2xl transition-custom"><i
+                        class="bi bi-tiktok"></i></a>
+            </div>
+            <p class="text-gray-600 text-[15px] ">© 2026 Peak Performance Quito. Sin Límites.</p>
+        </div>
+    </footer>
+
+    <script type="module" src="/src/js/contacto.js"></script>
+</body>
+
+</html>

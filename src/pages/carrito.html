@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tu Carrito | Peak Performance</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/src/css/style.css">
+</head>
+
+<body class="bg-[#b7b0b0]">
+
+    <header id="navbar" class="fixed top-0 left-0 right-0 z-50 transition-custom">
+        <nav class="container mx-auto px-6 py-6 flex justify-between items-center">
+            <div class="flex items-center space-x-6">
+                <a href="/src/pages/contacto.html"
+                    class="text-2xl font-black text-white italic uppercase tracking-tighter">
+                    PEAK <span class="text-orange-500">PERFORMANCE</span>
+                </a>
+                <a href="/src/pages/carrito.html"
+                    class="relative flex items-center gap-2 text-red-600 font-bold py-2 px-5 rounded-full transition-custom shadow-lg hover:bg-gray-800">
+                    <i class="bi bi-cart-fill"></i>
+                    <span class="text-[15px] uppercase">Carrito</span>
+                    <span id="carrito-count"
+                        class="absolute -top-1 -right-1 bg-white text-black text-[10px] w-5 h-5 flex items-center justify-center rounded-full border border-orange-500 font-bold">0</span>
+                </a>
+            </div>
+            <ul class="hidden md:flex space-x-8 text-[11px] font-bold tracking-widest text-white uppercase">
+                <li><a href="/index.html" class="hover:text-orange-500 transition-custom">Inicio</a></li>
+                <li><a href="/src/pages/nosotros.html" class="hover:text-orange-500 transition-custom">Nosotros</a></li>
+                <li><a href="/src/pages/productos.html" class="hover:text-orange-500 transition-custom">Productos</a>
+                </li>
+                <li><a href="/src/pages/contacto.html" class="text-orange-500">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="pt-40 pb-24 container mx-auto px-6 min-h-screen">
+        <h2 class="text-5xl font-black text-center text-white italic uppercase mb-12 tracking-tighter">
+            Tu <span class="text-orange-500">Arsenal</span>
+        </h2>
+
+        <div class="grid lg:grid-cols-3 gap-12">
+            <div class="lg:col-span-2 space-y-4">
+                <div id="lista-carrito" class="bg-[#1a1a1a] p-6 rounded-[2rem] border border-gray-800">
+                </div>
+            </div>
+
+            <div class="bg-[#0a0a0a] p-8 rounded-[2rem] border border-gray-800 h-fit sticky top-32">
+                <h3 class="text-2xl font-black text-white italic uppercase mb-6">Resumen</h3>
+
+                <div class="flex justify-between items-center mb-6 text-gray-400">
+                    <span>Total a Pagar:</span>
+                    <span id="total-compra" class="text-3xl font-black text-orange-500 italic">$0.00</span>
+                </div>
+
+                <button id="btn-pagar"
+                    class="w-full bg-orange-500 text-black font-black py-4 rounded-xl uppercase italic hover:bg-white transition-custom mb-4 shadow-lg hover:shadow-orange-500/20 active:scale-95">
+                    Proceder al Pago <i class="bi bi-credit-card-fill ml-2"></i>
+                </button>
+
+                <button id="vaciar-carrito"
+                    class="w-full text-red-500 text-xs font-bold uppercase tracking-widest hover:text-white transition-colors">
+                    Vaciar Carrito
+                </button>
+            </div>
+        </div>
+    </main>
+
+    <script type="module" src="/src/js/carrito.js"></script>
+</body>
+
+</html>

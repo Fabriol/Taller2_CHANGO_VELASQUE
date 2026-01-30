@@ -1,4 +1,5 @@
 import '../css/style.css';
+import 'flowbite';
 
 export function initScrollReveal() {
     const reveals = document.querySelectorAll('.reveal');
@@ -13,7 +14,7 @@ export function initScrollReveal() {
     reveals.forEach(element => observer.observe(element));
 }
 
-// --- 2. EFECTO NAVBAR ---
+
 function initNavbar() {
     const nav = document.getElementById('navbar');
     if (nav) {

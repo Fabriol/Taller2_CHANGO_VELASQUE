@@ -19,11 +19,14 @@
                     class="text-2xl font-black text-white italic uppercase tracking-tighter">
                     PEAK <span class="text-orange-500">PERFORMANCE</span>
                 </a>
-                <button onclick="abrirCarrito()"
-                    class="flex items-center gap-2 text-red-600 font-bold py-2 px-5 rounded-full transition-custom shadow-lg">
+                <a href="/src/pages/carrito.html"
+                    class="relative flex items-center gap-2 text-red-600 font-bold py-2 px-5 rounded-full transition-custom shadow-lg hover:bg-gray-800">
                     <i class="bi bi-cart-fill"></i>
-                    <span class="text-[15px] uppercase">Comprar</span>
-                </button>
+                    <span class="text-[15px] uppercase">Carrito</span>
+
+                    <span id="carrito-count"
+                        class="absolute -top-1 -right-1 bg-white text-black text-[10px] w-5 h-5 flex items-center justify-center rounded-full border border-orange-500 font-bold">0</span>
+                </a>
             </div>
             <ul class="hidden md:flex space-x-8 text-[11px] font-bold tracking-widest text-white uppercase">
                 <li><a href="/index.html" class="hover:text-orange-500">Inicio</a></li>
@@ -51,11 +54,12 @@
             <button onclick="filterProducts('Equipo')"
                 class="px-6 py-2 rounded-full border border-gray-700 text-white hover:border-orange-500 hover:text-black transition-all text-sm uppercase font-bold hover:shadow-[0_0_15px_rgba(249,115,22,0.3)]">Equipo</button>
             <button onclick="filterProducts('all')"
-                class="px-6 py-2 rounded-full border border-gray-700 text-white hover:border-orange-500 hover:text-black transition-all text-sm uppercase font-bold shadow-[0_0_15px_rgba(249,115,22,0.3)]">+ Arsenal</button>
+                class="px-6 py-2 rounded-full border border-gray-700 text-white hover:border-orange-500 hover:text-black transition-all text-sm uppercase font-bold shadow-[0_0_15px_rgba(249,115,22,0.3)]">+
+                Arsenal</button>
         </div>
 
         <div id="product-container" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-10">
-            </div>
+        </div>
 
     </main>
 
@@ -74,8 +78,9 @@
             <p class="text-gray-600 text-[15px] ">© 2026 Peak Performance Quito. Sin Límites.</p>
         </div>
     </footer>
-    
+
     <script type="module" src="/src/js/productos.js"></script>
+    <script type="module" src="/src/js/carrito.js"></script>
 </body>
 
 </html>

@@ -4,8 +4,9 @@ import { initScrollReveal } from './animaciones.js';
 
 const contenedor = document.getElementById("product-container");
 const contadorNavbar = document.getElementById("carrito-count");
+const botonesFiltro = document.querySelectorAll(".btn-filtro");
 
-let productosGlobales = []; 
+let productosGlobales = [];
 let carrito = JSON.parse(localStorage.getItem("carrito-productos")) || [];
 
 const actualizarContador = () => {
@@ -55,21 +56,22 @@ const cargarTienda = async () => {
     try {
         const respuesta = await fetch("/data/productos.json");
         if (!respuesta.ok) throw new Error("Error al cargar productos");
-        
+
         const datos = await respuesta.json();
-        productosGlobales = datos; 
+        productosGlobales = datos;
         renderProducts(productosGlobales);
-        
+
     } catch (error) {
         console.error(error);
         contenedor.innerHTML = `<p class="text-center text-red-500 col-span-full">Error de conexión. Intenta recargar.</p>`;
     }
 };
 
-window.filterProducts = (categoria) => {
-    const botones = document.querySelectorAll('button[onclick^="filterProducts"]');
-    botones.forEach(btn => {
-        if (btn.textContent.toLowerCase().includes(categoria.toLowerCase()) || (categoria === 'all' && btn.textContent === 'Todos')) {
+const activarFiltro = (categoriaSeleccionada) => {
+    botonesFiltro.forEach(btn => {
+        const categoriaBtn = btn.dataset.categoria;
+
+        if (categoriaBtn === categoriaSeleccionada) {
             btn.classList.add('bg-orange-500', 'text-black', 'border-orange-500');
             btn.classList.remove('text-gray-400', 'border-gray-700');
         } else {
@@ -78,18 +80,25 @@ window.filterProducts = (categoria) => {
         }
     });
 
-    if (categoria === 'all') {
+    if (categoriaSeleccionada === 'all') {
         renderProducts(productosGlobales);
     } else {
-        const filtrados = productosGlobales.filter(p => p.categoria === categoria);
+        const filtrados = productosGlobales.filter(p => p.categoria === categoriaSeleccionada);
         renderProducts(filtrados);
     }
 };
 
+botonesFiltro.forEach(btn => {
+    btn.addEventListener("click", (e) => {
+        const categoria = e.target.dataset.categoria;
+        activarFiltro(categoria);
+    });
+});
+
 if (contenedor) {
     contenedor.addEventListener("click", (e) => {
         const boton = e.target.closest(".btn-agregar");
-        
+
         if (boton) {
             const productoNuevo = {
                 id: boton.dataset.id,
@@ -105,7 +114,7 @@ if (contenedor) {
             const textoOriginal = boton.innerHTML;
             boton.innerHTML = "¡LISTO!";
             boton.classList.add("bg-green-500", "text-white");
-            
+
             setTimeout(() => {
                 boton.innerHTML = textoOriginal;
                 boton.classList.remove("bg-green-500", "text-white");

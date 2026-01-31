@@ -49,3 +49,11 @@ body {
     border-color: #f97316;
     box-shadow: 0 0 15px rgba(249, 115, 22, 0.4);
 }
+
+.hide-scroll::-webkit-scrollbar {
+    display: none;
+}
+.hide-scroll {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
